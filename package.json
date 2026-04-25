@@ -1,0 +1,16 @@
+{
+  "name": "minecraft-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for Minecraft server administration",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "register": "node register-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
+  }
+}
