@@ -225,9 +225,9 @@ client.on("interactionCreate", async (interaction) => {
 });
 
 // ─── Ready ──────────────────────────────────────────────────────────────────
-client.once("ready", () => {
-  console.log(`✅ Bot online as ${client.user.tag}`);
-  client.user.setActivity("Minecraft Server", { type: 3 }); // Watching
+client.once("clientReady", (c) => {
+  console.log(`✅ Bot online as ${c.user.tag}`);
+  c.user.setActivity("Minecraft Server", { type: 3 }); // Watching
 });
 
 client.login(process.env.DISCORD_TOKEN);
